@@ -23,7 +23,7 @@ cabeçalho mobile: `#15191C`
 
 menu lateral: `#15191C`
 
-cartão: `#2C343A`
+cartão: `2C343A#`
 
 fonte: `#FFFFFF`
 
