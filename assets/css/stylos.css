@@ -8,6 +8,16 @@ body{
     font-family: 'open sans','icones',sans-serif;
     color: #ffffff;
 }
+
+@media screen and (min-width:1440px){
+    body{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+}
+
+
 .cabecalho{
     display:flex;
     justify-content: space-between;
@@ -98,10 +108,17 @@ body{
 
 .principal{
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina{
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao{
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -110,6 +127,10 @@ body{
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.cartao--destaque{
+    margin-bottom: 16px;
 }
 
 .cartao__conteudo{
@@ -161,6 +182,7 @@ body{
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before{
@@ -174,4 +196,9 @@ body{
 }
 .cartao__botao--destaque::before{
     margin-right:8px;
+}
+
+.secao{
+   display: grid;
+   gap: 16px;
 }
