@@ -45,6 +45,13 @@ body{
 display: none;
 }
 
+@media screen and (width: 1440px) {
+    .cabecalho{
+        background-color: #15191C;
+        display: grid;
+    }
+}
+
 .menu-lateral{
     display: flex;
     flex-direction: column;
