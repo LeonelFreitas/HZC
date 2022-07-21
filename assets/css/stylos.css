@@ -17,7 +17,6 @@ body{
     
 }
 
-
 .cabecalho{
     display:flex;
     justify-content: space-between;
@@ -47,13 +46,14 @@ display: none;
 
 @media screen and (min-width: 1440px) {
     .cabecalho{
-        background-color: #15191C;
+        background-color: #1d232a;
         display: grid;
         column-gap: 32px;
         grid-template-columns: 1fr auto;
         padding: 16px 60px;
         height: 80px;
         box-sizing: border-box;
+        grid-column: 2;
     }
     .cabecalho__menu{
         display: none;
@@ -87,6 +87,7 @@ display: none;
         content: "\e90d";
         color: #ffffff;
         font-size: 1.5rem;
+
     }
 }
 
@@ -159,6 +160,8 @@ display: none;
    .menu-lateral{
     position: static;
     width: 200px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
    } 
 }
 
@@ -185,6 +188,7 @@ display: none;
         grid-template-columns: auto 1fr auto;
         column-gap: 32px;
         padding: 16px 60px;
+        grid-column:2 ;
 }}
 
 .cartao{
@@ -285,6 +289,29 @@ display: none;
         font-weight: 600;
         color: #0480DC;
         justify-self: flex-end;
+    }
+    .cartao__lista{
+        display: grid;
+        row-gap:16px;
+        grid-column: span 2;
+    }
+    .cartao__item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+    .cartao__item-thumbnail{
+        width: 32px;
+        grid-row: span 2;
+    }
+    .cartao__item-titulo{
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+    .cartao__item-perfil{
+        font-size: 0.8rem;
+        color: #95999c;
     }
 }
 
